@@ -337,7 +337,7 @@ def draw():
 
 
 def main():
-    outdir = os.environ.get("MAKEFUN_OUTPUT_DIR", "out")
+    outdir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
     os.makedirs(outdir, exist_ok=True)
     px = draw()
     path = os.path.join(outdir, "entry.png")
